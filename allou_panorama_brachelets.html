@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap" rel="stylesheet">
+
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        left: 35%;
+        top: 10%;
+        margin-left: -150px;
+        margin-top: -150px;
+      }
+
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+      }
+
+      .down{
+        position: relative;
+        top:50%;
+      }
+      h1{
+        left:25%;
+
+      }
+      @media screen and (max-width: 480px){
+
+.panorama_img{ 
+  width: 100%;
+  height: 400px;
+}
+  }
+
+  .euros{
+    width:40px;
+    height:40px;
+  }
+  h1.purple{
+    color:purple;
+    font-family: 'Darumadrop One', cursive;
+  }
+  h1.blue{
+    color:#3399FF;
+    font-family: 'Darumadrop One', cursive;
+  }
+
+  h3.map{
+    font-family:Times New Roman, Helvetica, sans-serif;
+  }
+    </style>
+  </head>
+
+  <body>
+    
+        <div>
+            <img src = "https://www.allou.gr/files/temp//DC08155CE46EDDC66FF8B57647DBC131.jpg" class="panorama_img" >
+        </div>
+            <div>
+        <img src="https://www.iconsdb.com/icons/preview/purple/euro-xxl.png" class="euros" align="left"/>
+         <h1 class="purple">PRICE 5<span>&#8364;</span></h1>
+         <img src="https://www.allou.gr/files/1/icons/age.png" align="left" />
+         <h1 class="purple">AGE>16</h1>
+         <img src="https://www.allou.gr/files/1/icons/ruler.png" align="left" />
+         <h1 class="purple">HEIGHT>1m</h1>
+         <img src="C:\Users\Charis\Desktop\Allou_Fun_Park\images\family2.png" align="left" />
+         <h1 class="blue">FAMILY</h1>
+            
+           </div>
+          <div>
+            <div>
+            <p>Το παραπάνω παιχνίδι εμπεριέχεται στα ακόλουθα passes:</p>
+           </div>
+          </div>
+           </body>
+    
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <a><img src="https://www.allou.gr/files/1/passes/blue2020.png" /><a>
+        </div>
+        <div class="swiper-slide">
+            <a href="C:\Users\Charis\Desktop\Νέος φάκελος\xxlslider1.html"><img src="https://www.allou.gr/files/1/passes/red2020.png" /><a>
+        </div>
+        <div class="swiper-slide">
+            <a><img src="https://www.allou.gr/files/1/passes/black2020.png" /><a>
+        </div>
+       
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>    
+
+    
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "cube",
+        grabCursor: true,
+        cubeEffect: {
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 20,
+          shadowScale: 0.94,
+        },
+
+        autoplay:{
+          delay:1000,
+          disableOnInteraction:false,
+          },
+          loop: true,
+
+
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+
+
+  </body>
+</html>
